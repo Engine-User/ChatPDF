@@ -90,7 +90,7 @@ def chat_with_pdf(pdf_text, prompt, chat_history):
         "Content-Type": "application/json"
     }
     data = {
-        "model": "llama-3.1-70b-versatile",
+        "model": "llama-3.3-70b-versatile",
         "messages": messages,
         "temperature": 0.5,
         "max_tokens": 1000
@@ -173,3 +173,4 @@ if st.button("Reset Chat"):
     st.session_state.file_processed = False
     st.session_state.pdf_text = ""
     st.rerun()
+
